@@ -1,0 +1,23 @@
+<div class="card" data-name="<%= item.Name %>">
+  <div class="description">
+    <div class="headshot">
+      <img src="./assets/bod/<%= item.photo_id %>.jpg">
+    </div>
+    <div class="sameHeight">
+      <div class="name"><%= item.Name %></div>
+      <div class="position"><%= item.Occupation %></div>
+    </div>
+    <div class="backHed">Years on Board</div>
+    <% if(item.Name !== "Dennis Muilenburg") { %>
+    <div class="background"><%= item.tenure %> - Present</div>
+    <% } else { %>
+      <div class="background"><%= item.tenure %></div>
+    <% } %>
+    <div class="backHed">Previously</div>
+    <div class="background"><%= item.Background %></div>
+    <% if(item.other_dir !== "N/A") { %>
+      <div class="backHed">Other board directorships</div>
+      <div class="background"><%= item.other_dir %></div>
+    <% } %>
+  </div>
+</div>

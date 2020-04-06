@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE doc SYSTEM "/SysConfig/Rules/ST.dtd">
+<?EM-dtdExt /SysConfig/Rules/ST.dtx?>
+<?EM-templateName /SysConfig/Times/Offpage/Templates/story.xml?>
+<doc xml:lang="en-us">
+<story>
+
+
+<text>
+	<h3 class="graphic-hed">Boeing’s Board of Directors</h3>
+	<h4 class="graphic-chatter">Members of Boeing’s governing board, who are paid an average of $345,000 annually in
+	cash and stock, come from a variety of backgrounds. Here’s a look at directors of the company during the 737 MAX crisis.</h4>
+
+	<div id="card-holder">
+		<% json.boeing.sort(function(a, b) { return a.order - b.order }).forEach(function(item, i) { %>
+			<%= t.include("partials/_card.html", { item: item, index: i }) %>
+		<% }) %>
+	</div>
+
+	<figcaption>
+		<p class="data-source">Sources: Boeing, 2019 DEF 14A filed with U.S. Securities and Exchange Commission</p>
+		<p class="art-credit">Lauren Flannery / The Seattle Times</p>
+	</figcaption>
+</text>
+
+</story>
+</doc>

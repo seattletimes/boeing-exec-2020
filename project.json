@@ -1,0 +1,22 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "sepulchral-pail"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2020/business/boeing-executive-profiles"
+    }
+  },
+  "title": "",
+  "description": "",
+  "author": "",
+  "url": "",
+  "post_id": 0,
+  "image": "assets/social.jpg",
+  "sheets": ["1eX_fbt0IsWw7QUk3rflEzHybLee3CT3KWyXTSMVpvzE"],
+  "docs": [],
+  "embedded": true,
+  "production": true
+}
